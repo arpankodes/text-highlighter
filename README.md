@@ -1,38 +1,28 @@
-# sv
+# Text Highlighter Sveltekit
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is a brief document about the Text Highlighter using Sveltekit.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Customize colour pallet.
+- Remove highlight.
+- Dispatch highlighted text for futher processing.
+- Automatically expand to word boundaries if partial word is selected.
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Tech Stack
 
-# create a new project in my-app
-npx sv create my-app
+**Client:** Sveltekit, CSS
+
+## Demo
+
+Try it here: [https://www.arpan.works/projects/text-highlighter]([https://www.arpan.works/projects/text-highlighter]())
+
+## Usage/Examples
+
+```javascript
+<script>
+  import TextHighlighter from "./TextHighlighter.svelte";
+</script>
+
+<TextHighlighter />
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
